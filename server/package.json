@@ -1,0 +1,14 @@
+{
+    "name": "toherserver",
+    "version": "0.0.1",
+    "dependencies": {
+        "express": "latest",
+        "mysql2": "latest",
+        "superagent": "latest",
+        "async": "latest",
+        "html-pdf": "latest"
+    },
+    "scripts": {
+        "start": "node app"
+    }
+}

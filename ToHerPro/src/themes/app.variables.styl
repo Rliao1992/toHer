@@ -16,8 +16,8 @@
 // It's highly recommended to change the default colors
 // to match your app's branding.
 
-$primary   = #027be3
-$secondary = #26A69A
+$primary   = #D92332
+$secondary = #11538C
 $tertiary  = #555
 
 $neutral   = #E0E1E2
@@ -35,3 +35,9 @@ $background-color    = white
 
 $link-color          = lighten($primary, 25%)
 $link-color-active   = $primary
+
+$support-for-ie ?= true
+opacity(n)
+      opacity n
+      if support-for-ie
+        filter unquote('progid:DXImageTransform.Microsoft.Alpha(Opacity=' + round(n * 100) + ')')

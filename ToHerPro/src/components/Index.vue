@@ -1,10 +1,10 @@
 <template>
   <q-layout>
-    <div slot="header" class="toolbar">
+    <!--<div slot="header" class="toolbar secondary">
       <q-toolbar-title :padding="0">
         Quasar Framework v{{$q.version}}
       </q-toolbar-title>
-    </div>
+    </div>-->
 
     <!--
       Replace following "div" with

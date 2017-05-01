@@ -5,7 +5,7 @@
                 <article class="head"></article>
                 <p contenteditable="true" @click="clearPlaceHolder(name)">{{name}}{{name == "" ? "" : ":"}}</p>
                 <article>
-                    <small contenteditable="true">{{content}}</small>
+                    <small contenteditable="true" @input="onDivInput($event)">{{content}}</small>
                 </article>
             </section>
         </div>
@@ -24,7 +24,11 @@
                 if(e !== ""){
                     this.name = "";
                 }
-            }
+            },
+            onDivInput: function(e) {
+                this.myHtmlCode = e.target.innerHTML;
+                console.log('Text: %o', this.myHtmlCode );
+            },
         }
     }
 </script>
